@@ -1,4 +1,4 @@
-# Soccer Stats
+# Soccer-Stats 
 
 A React-based application for following and tracking your favourite soccer clubs around the world.
 
