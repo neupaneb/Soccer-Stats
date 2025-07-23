@@ -1,9 +1,78 @@
-# Soccer-Stats 
+# Soccer-Stats ⚽️  
+A React-based web application for following and tracking your favorite soccer clubs around the world.
 
-A React-based application for following and tracking your favourite soccer clubs around the world.
+## 📌 Overview
+**Soccer Stats** is a full-stack web app built for soccer enthusiasts to explore, follow, and keep track of their favorite clubs globally. Users can:
+- Search for teams by **country** or **league**
+- Add clubs to a **favorites list**
+- View **fixtures**, **player stats**, and **club details** in real time
 
-Soccer Stats is a React-based web application designed for soccer enthusiasts to follow and track their favorite clubs worldwide. It allows users to search for teams by country and league, add them to a personal favorites list, and view comprehensive club details, including upcoming fixtures and player statistics. Built using React, Node.js, Express, MongoDB, and API-Football, the app provides real-time data and a user-friendly interface for exploring soccer clubs globally. The project is open-source and welcomes contributions from the community.
+Powered by the **API-Football** API, the app provides live data updates and a smooth user interface. It’s built with **React**, **Node.js**, **Express**, and **MongoDB**, and is fully open-source.
 
-## Running Locally
+---
 
-To run this application locally, replace user name and password in ./server/database/config.js with real mongoDB username and password.
+## 🚀 Features
+- 🌍 Country and league-based team search  
+- ⭐ Add/remove teams to a personal favorites list  
+- 📊 View player stats and upcoming fixtures  
+- ⚡ Real-time data using API-Football  
+- 🧠 MongoDB caching to reduce API calls and improve performance  
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer     | Technology                 |
+|-----------|----------------------------|
+| Frontend  | React.js, HTML, CSS        |
+| Backend   | Node.js, Express.js        |
+| Database  | MongoDB                    |
+| API       | API-Football               |
+| Others    | Webpack, Git, Postman      |
+
+---
+
+## 🖥️ Running Locally
+
+###1. Clone the Repository
+
+###2. Install Dependencies
+
+# Frontend
+npm install
+
+# Backend
+cd server
+npm install
+
+###3. Configure MongoDB
+
+module.exports = {
+  username: 'YOUR_MONGO_USERNAME',
+  password: 'YOUR_MONGO_PASSWORD',
+  ip: 'localhost', // or your remote DB IP
+};
+
+
+###4. Set up API Keys
+
+module.exports = {
+  hostKey: 'YOUR_API_FOOTBALL_HOSTKEY',
+  apiKey: 'YOUR_API_FOOTBALL_APIKEY',
+};
+
+
+###5. Run the Application
+
+
+# Bundle frontend (if applicable)
+npm run bundle
+
+# Start frontend
+npm start
+
+# In a new terminal, start backend
+cd server
+node index.js
+
+
