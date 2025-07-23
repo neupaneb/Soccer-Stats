@@ -36,48 +36,39 @@ Powered by the **API-Football** API, the app provides live data updates and a sm
 
 ## 🖥️ Running Locally
 
-1. Clone the Repository
+### 1. Clone the Repository
+```
+git clone https://github.com/neupaneb/Soccer-Stats.git
+cd Soccer-Stats
 
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
 
-Install frontend dependencies
-
+```
 npm install
-
-Install backend dependencies
-
-cd server
-npm install
-cd ..
-
-
-3. Configure MongoDB
+```
+### 3. Configure MongoDB
 Rename RENAME_ME_CONFIG.js inside server/database/ to config.js and update it with your credentials:
-
+```
 module.exports = {
   username: 'YOUR_MONGO_USERNAME',
   password: 'YOUR_MONGO_PASSWORD',
   ip: 'localhost', // or your remote DB IP
 };
-
-
-4. Set up API Keys
+```
+### 4. Set up API Keys
 Rename RENAME_ME_CONFIG.js inside server/controllers/ to config.js and update it with your API-Football credentials:
 
+```
 module.exports = {
   hostKey: 'YOUR_API_FOOTBALL_HOSTKEY',
   apiKey: 'YOUR_API_FOOTBALL_APIKEY',
 };
+```
+### 5. Run the Application
 
-5. Run the Application
-
-Bundle frontend if applicable
+```
 npm run bundle
-
-Start frontend
 npm start
-
-In a new terminal, start backend
-cd server
-node index.js
+```
