@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const PlayerStatsContainer = styled.div`
-  background-color: #fff;
-  border-radius: 4px;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
   display: flex;
   flex-flow: column;
   max-height: 367px;
@@ -20,14 +21,14 @@ const PlayerStatsContainer = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00d4b1;
+    background-color: var(--accent-dark);
     border: 1px solid #f1f3f4;
     border-radius: 4px;
   }
 `;
 
 const PlayerStatsTableContainer = styled.div`
-  background-color: #fff;
+  background-color: var(--surface);
   border-radius: 4px;
   display: flex;
   flex-flow: column;
@@ -36,7 +37,7 @@ const PlayerStatsTableContainer = styled.div`
 `;
 
 const PlayerStatsTable = styled.div`
-  border-bottom: 1px solid #f1f3f4;
+  border-bottom: 1px solid var(--line);
   border-radius: 4px;
   display: grid;
   grid-template-columns: 150px 1fr;

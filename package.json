@@ -1,12 +1,14 @@
 {
-  "name": "hrr47-mvp",
+  "name": "touchline-soccer-stats",
   "version": "1.0.0",
-  "description": "Football Friends",
+  "description": "A full-stack soccer intelligence dashboard for standings, fixtures, clubs, and players.",
   "main": "webpack.config.js",
   "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
     "bundle": "webpack --config webpack.config.js --watch",
-    "start": "nodemon --ignore node_modules server/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/index.js",
+    "dev": "nodemon --ignore node_modules server/index.js",
+    "lint": "eslint src server webpack.config.js"
   },
   
   "dependencies": {

@@ -17,7 +17,7 @@ const SelectLeague = ({ leagues, updateFootballStandings }) => (
   <SearchCountry>
     <Select
       label="Single select"
-      defaultValue={{ label: 'Premier League', value: 'Premier League' }}
+      defaultValue={{ label: 'Premier Division', value: 100 }}
       options={leagues}
       placeholder="Select League"
       onChange={updateFootballStandings}

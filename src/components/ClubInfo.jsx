@@ -7,8 +7,9 @@ const ClubInfoContainer = styled.div`
 `;
 
 const ClubInfoTable = styled.div`
-  background-color: #fff;
-  border-radius: 4px;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
   display: flex;
   flex-flow: column;
   max-height: 366px;
@@ -23,7 +24,7 @@ const ClubInfoTable = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00d4b1;
+    background-color: var(--accent-dark);
     border: 1px solid #f1f3f4;
     border-radius: 4px;
   }
@@ -38,7 +39,7 @@ const ClubLogo = styled.div`
 
 const ClubTable = styled.div`
   border-radius: 4px;
-  border-top: 1px solid #f1f3f4;
+  border-top: 1px solid var(--line);
   display: grid;
   grid-template-columns: 100px 1fr;
   padding: 5px;

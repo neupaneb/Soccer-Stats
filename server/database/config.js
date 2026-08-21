@@ -1,6 +1,4 @@
 
 module.exports = {
-  username: 'USERNAME',
-  password: 'PASSWORD',
-  ip: 'localhost',
+  uri: process.env.MONGODB_URI || 'mongodb://localhost:27017',
 };

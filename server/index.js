@@ -3,7 +3,7 @@ const path = require('path');
 const express = require('express');
 const fb = require('./controllers/api');
 
-const PORT = '1337';
+const PORT = process.env.PORT || 1337;
 
 const app = express();
 
@@ -19,7 +19,7 @@ app.get('/api/leagues/type/league/:country/2020', fb.getAndUpdateLeagues);
 app.get('/api/tabel/standings/:league_id', fb.getAndUpdateStandings);
 app.get('/api/teams/team/:team_id', fb.getAndUpdateTeamInfo);
 app.get('/api/teams/team/fixtures/:team_id', fb.getAndUpdateTeamFixtures);
-app.get('api/players/squad/:team_id/2020-2021', fb.getAndUpdateTeamPlayers);
+app.get('/api/players/squad/:team_id/2020-2021', fb.getAndUpdateTeamPlayers);
 app.get('/api/players/player/:player_id/2020-2021', fb.getAndUpdatePlayerStats);
 
 // Database requests

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const FixturesTable = styled.div`
-  background-color: #fff;
+  background-color: var(--surface);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   display: flex;
@@ -13,6 +13,7 @@ const FixturesTable = styled.div`
   min-height: 325px;
   overflow-x: hidden;
   width: 100%;
+  border: 1px solid var(--line);
 
   ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -20,15 +21,15 @@ const FixturesTable = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00d4b1;
+    background-color: var(--accent-dark);
     border: 1px solid #f1f3f4;
     border-radius: 4px;
   }
 `;
 
 const FixturesTableHeader = styled.div`
-  background-color: #fff;
-  border-bottom: 1px solid #b2b2b2;
+  background-color: var(--surface-raised);
+  border-bottom: 1px solid var(--line);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   font-weight: 700;
@@ -38,8 +39,8 @@ const FixturesTableHeader = styled.div`
 `;
 
 const FixtureContainer = styled.div`
-  background-color: #fff;
-  border: 1px solid #f1f3f4;
+  background-color: var(--surface);
+  border: 1px solid var(--line);
   display: grid;
   grid-template-areas:
     "teamOne date teamTwo";
@@ -81,7 +82,7 @@ const GameInfoContainer = styled.div`
   display: flex;
   flex-flow: column;
   font-weight: 700;
-  grid-area: date
+  grid-area: date;
   justify-content: center;
   min-width: 100px;
 `;

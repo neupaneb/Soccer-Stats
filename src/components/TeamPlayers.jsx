@@ -8,7 +8,7 @@ const TeamPlayersContainer = styled.div`
 `;
 
 const TeamPlayersTabelContainer = styled.div`
-  background-color: #fff;
+  background-color: var(--surface);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   display: flex;
@@ -23,15 +23,15 @@ const TeamPlayersTabelContainer = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00d4b1;
+    background-color: var(--accent-dark);
     border: 1px solid #f1f3f4;
     border-radius: 4px;
   }
 `;
 
 const TeamPlayersTabelHeader = styled.div`
-  background-color: #fff;
-  border-bottom: 1px solid #b2b2b2;
+  background-color: var(--surface-raised);
+  border-bottom: 1px solid var(--line);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   display: grid;
@@ -45,8 +45,8 @@ const TeamPlayersTabelHeader = styled.div`
 `;
 
 const TeamPlayersTabelRow = styled.div`
-  background-color: #fff;
-  border-top: 1px solid #f1f3f4;
+  background-color: var(--surface);
+  border-top: 1px solid var(--line);
   cursor: pointer;
   display: grid;
   font-weight: 400;
@@ -56,7 +56,7 @@ const TeamPlayersTabelRow = styled.div`
   padding: 5px;
 
   &:hover {
-    background-color: #00d4b1;
+    background-color: rgba(200, 255, 77, .1);
   }
 `;
 

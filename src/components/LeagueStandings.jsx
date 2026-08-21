@@ -7,14 +7,16 @@ const FootballTableContainer = styled.div`
 `;
 
 const LeagueTable = styled.div`
-  background-color: #fff;
+  background-color: var(--surface);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   display: flex;
   flex-flow: column;
   max-height: 300px;
   min-width: 100%;
-  overflow-x: hidden;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 14px;
 
   ::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -22,15 +24,14 @@ const LeagueTable = styled.div`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: #00d4b1;
-    border: 1px solid #f1f3f4;
+    background-color: var(--accent-dark);
     border-radius: 4px;
   }
 `;
 
 const LeagueTableHeader = styled.div`
-  background-color: #fff;
-  border-bottom: 1px solid #b2b2b2;
+  background-color: var(--surface-raised);
+  border-bottom: 1px solid var(--line);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   display: grid;
@@ -38,24 +39,24 @@ const LeagueTableHeader = styled.div`
   grid-template-areas:
     "club mp win loss draw gf ga gd pts last";
   grid-template-columns: 7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
-  padding: 5px;
-  padding-top: 10px;
+  padding: 14px 12px;
   min-width: 100%;
 `;
 
 const LeagueTableRow = styled.div`
-  background-color: #fff;
-  border-top: 1px solid #f1f3f4;
+  background-color: var(--surface);
+  border-top: 1px solid var(--line);
   cursor: pointer;
   display: grid;
   font-weight: 400;
   grid-template-areas:
     "club mp win loss draw gf ga gd pts last";
   grid-template-columns: 7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 3fr;
-  padding: 5px;
+  padding: 12px;
+  transition: background-color .18s ease;
 
   &:hover {
-    background-color: #00d4b1;
+    background-color: rgba(200, 255, 77, .1);
   }
 `;
 
