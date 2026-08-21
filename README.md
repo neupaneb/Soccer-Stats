@@ -4,6 +4,18 @@
 
 Soccer Stat Analyzer turns football data into one focused analytics workspace. Choose a country and competition, inspect the table, save clubs to a personal shortlist, and move from club details to squad-level statistics without leaving the dashboard. A built-in demo dataset keeps the full interface presentation-ready without external services.
 
+## Preview
+
+![Soccer Stat Analyzer competition dashboard](docs/screenshots/dashboard-overview.png)
+
+### League and club analysis
+
+![League table, followed clubs, club profile, and upcoming fixtures](docs/screenshots/club-overview.png)
+
+### Squad intelligence
+
+![Squad roster and individual player performance statistics](docs/screenshots/player-analytics.png)
+
 ## Why this project matters
 
 This project demonstrates an end-to-end JavaScript application: a responsive React interface, an Express API layer, MongoDB-backed caching, and integration with API-Football. The caching layer reduces repeated third-party requests and provides a foundation for rate-limit-aware data delivery.
@@ -47,7 +59,7 @@ React client  →  Express routes  →  MongoDB cache
 ```bash
 git clone https://github.com/neupaneb/Soccer-Stats.git
 cd Soccer-Stats
-npm install
+npm install --legacy-peer-deps
 source .env.example
 ```
 
